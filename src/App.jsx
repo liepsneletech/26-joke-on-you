@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <ul>
+      <ul className="container">
         {cards?.map((c, i) => {
           return <Card key={i} {...c} />;
         })}
