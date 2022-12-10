@@ -15,9 +15,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1 className="main-title">
-          Jokes on you <i class="fa-regular fa-face-laugh-beam"></i>
-        </h1>
+        <h1 className="main-title">Jokes on you</h1>
         <div className="cards-box">
           {cards?.map((c, i) => {
             return <Card key={i} {...c} />;
