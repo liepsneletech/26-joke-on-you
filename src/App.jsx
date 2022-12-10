@@ -14,11 +14,16 @@ function App() {
 
   return (
     <div className="App">
-      <ul className="container">
-        {cards?.map((c, i) => {
-          return <Card key={i} {...c} />;
-        })}
-      </ul>
+      <div className="container">
+        <h1 className="main-title">
+          Jokes on you <i class="fa-regular fa-face-laugh-beam"></i>
+        </h1>
+        <div className="cards-box">
+          {cards?.map((c, i) => {
+            return <Card key={i} {...c} />;
+          })}
+        </div>
+      </div>
     </div>
   );
 }

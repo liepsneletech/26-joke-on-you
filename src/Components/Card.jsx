@@ -1,8 +1,11 @@
 function Card({ type, joke, setup, delivery }) {
   return (
     <div className="card">
-      <h2> {type === "single" ? joke : setup} </h2>
-      {type === "twopart" && <p>{delivery}</p>}
+      <p className="joke-text joke-part-1">
+        {" "}
+        {type === "single" ? joke : setup}{" "}
+      </p>
+      {type === "twopart" && <p className="joke-text">{delivery}</p>}
     </div>
   );
 }
